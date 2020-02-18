@@ -6,7 +6,7 @@ import Item from "./Item"
 
 const List = ({ todos }) => {
     console.log(todos);
-    const row = todos.map(x => <Item todo={x} />)
+    const row = todos.map(x => <Item todo={x.note} />)
     console.log(row) 
     return (
         <ul>

@@ -5,7 +5,7 @@ const Item = ({ todo }) => {
     
     return (
         <>
-            <li>{todo.note}</li>
+            <li>{todo}</li>
         </>
     )
 }
