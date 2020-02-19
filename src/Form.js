@@ -3,10 +3,13 @@ import React from "react"
 const Form = ({ setTodos, todos }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
-    // const newTodos = todos.slice()
-    // newTodos.push("やらなければならないこと")
+      const newTodos = todos.slice()
+      newTodos.push({ note: "やらなければならないこと" })
+      console.log(todos);
+      console.log(newTodos);
+      setTodos(todos = newTodos)
 
-    setTodos(todos.concat({ note: 'やらなければならないこと'}))
+    // setTodos(todos.concat({ note: 'やらなければならないこと'}))
   }
   return (
     <form
